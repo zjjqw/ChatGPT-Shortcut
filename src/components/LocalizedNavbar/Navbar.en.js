@@ -7,19 +7,19 @@ const enNavbar = {
   },
   items: [
     {
-      href: 'https://www.producthunt.com/posts/chatgpt-shortcut?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-chatgpt&#0045;shortcut',
-      label: 'Find on Product Hunt',
+      href: 'https://chat.aiprm.top',
+      label: 'ChatGPT',
       target: '_blank',
       position: 'left',
     },
     { type: "localeDropdown", position: "right" },
     {
-      href: "https://github.com/rockbenben/ChatGPT-Shortcut",
+      href: "http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=8iL4Va8YaqNyrbdifhEOD0biZx8l2tWY&authKey=TNyKaORGJ0wwCuiwy6BDBlI1MnHM4JTZVJpf9uP%2BT0%2FH5QgW5yrtoK5zKXVhe8xX&noverify=0&group_code=125800040",
       position: "right",
       className: "header-github-link",
     },
     {
-      href: "https://discord.gg/PZTQfJ4GjX",
+      href: "http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=8iL4Va8YaqNyrbdifhEOD0biZx8l2tWY&authKey=TNyKaORGJ0wwCuiwy6BDBlI1MnHM4JTZVJpf9uP%2BT0%2FH5QgW5yrtoK5zKXVhe8xX&noverify=0&group_code=125800040",
       position: "right",
       className: "header-discord-link",
     },
