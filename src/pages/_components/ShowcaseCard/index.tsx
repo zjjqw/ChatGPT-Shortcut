@@ -86,18 +86,19 @@ function ShowcaseCard({ user, isDescription, copyCount, onCopy }) {
 
   const handleCopyClick = useCallback(async () => {
     try {
-      const updatedCount = await updateCopyCount(user.id);
-      if (user.description) {
-        copy(userDescription);
-      }
-      setShowCopied(true);
-      setTimeout(() => setShowCopied(false), 2000);
-      // Notify parent component to update the copy count
-      onCopy(user.id, updatedCount);
-    } catch (error) {
-      console.error("Error updating copy count:", error);
+    const updatedCount = await updateCopyCount(user.id);
+    if (user.description) {
+    copy(userDescription);
     }
-  }, [user.id]);
+    setShowCopied(true);
+    setTimeout(() => setShowCopied(false), 2000);
+    // Notify parent component to update the copy count
+    onCopy(user.id, updatedCount);
+    window.location.href = 'https://chat.aiprm.top';
+    } catch (error) {
+    console.error("Error updating copy count:", error);
+    }
+    }, [user.id]);
   // 将显示数据单位简化到 k
   const formatCopyCount = (count) => {
     if (count >= 1000) {
@@ -106,40 +107,59 @@ function ShowcaseCard({ user, isDescription, copyCount, onCopy }) {
     return count;
   };
   
-  function ShowcaseCard(props) {
-    const { user } = props;
-    const [copied, setCopied] = React.useState(false);
-  
-    function handleCopyClick() {
-      navigator.clipboard.writeText("https://chat.aiprm.top");
-      setCopied(true);
-      setTimeout(() => {
-        setCopied(false);
-      }, 2000);
-      window.location.href = "https://chat.aiprm.top";
-    }
-  
-    return (
-      <li key={user.title} className="card shadow--md">
-        {/* Rest of the component */}
-        <button
-          className={clsx(
-            "button button--secondary button--sm",
-            styles.showcaseCardSrcBtn
+  return (
+    <li key={userTitle} className="card shadow--md">
+      {/* <div className={clsx('card__image', styles.showcaseCardImage)}>
+        <Image img={image} alt={user.title} />
+      </div> */}
+      <div className={clsx("card__body", styles.cardBodyHeight)}>
+        <div className={clsx(styles.showcaseCardHeader)}>
+          <Heading as="h4" className={styles.showcaseCardTitle}>
+            <Link href={user.website} className={styles.showcaseCardLink}>
+              {userTitle}{" "}
+            </Link>
+            <span className={styles.showcaseCardBody}>
+              {copyCount > 0 && `🔥${formatCopyCount(copyCount)}`}
+            </span>
+          </Heading>
+          {user.tags.includes("favorite") && (
+            <FavoriteIcon svgClass={styles.svgIconFavorite} size="small" />
           )}
-          type="button"
-          onClick={handleCopyClick}
-        >
-          {copied ? (
-            <Translate>已复制</Translate>
-          ) : (
-            <Translate>复制</Translate>
-          )}
-        </button>
-      </li>
-    );
-  }
-  
+          {/* {user.source && (
+            <Link
+              href={user.source}
+              className={clsx(
+                'button button--secondary button--sm',
+                styles.showcaseCardSrcBtn,
+              )}>
+              <Translate id="showcase.card.sourceLink">source</Translate>
+            </Link>
+          )} */}
+          <button
+            className={clsx(
+              "button button--secondary button--sm",
+              styles.showcaseCardSrcBtn
+            )}
+            type="button"
+            onClick={handleCopyClick}
+          >
+            {copied ? (
+              <Translate>已复制</Translate>
+            ) : (
+              <Translate>复制</Translate>
+            )}
+          </button>
+        </div>
+        <p className={styles.showcaseCardBody}>👉 {userRemark}</p>
+        <p onClick={handleParagraphClick} className={styles.showcaseCardBody}>
+          {userDescription}
+        </p>
+      </div>
+      <ul className={clsx("card__footer", styles.cardFooter)}>
+        <ShowcaseCardTag tags={user.tags} />
+      </ul>
+    </li>
+  );
 }
 
 export default React.memo(ShowcaseCard);
