@@ -7,8 +7,8 @@ const zhNavbar = {
   },
   items: [
     {
-      to: "https://newzone.top/posts/2023-02-27-chatgpt_shortcuts.html",
-      label: "ChatGPT Shortcut 原理说明",
+      to: "https://aiprm.top",
+      label: "Aiprm",
       position: "left",
     },
     {
@@ -16,41 +16,38 @@ const zhNavbar = {
       label: '其他工具',
       position: 'left',
       items: [
+        
         {
-          label: "Chrome 扩展版",
-          href: "https://chrome.google.com/webstore/detail/chatgpt-shortcut/blcgeoojgdpodnmnhfpohphdhfncblnj",
+          label: '高级提示词',
+          href: 'https://aiprm.top/t/prm',
         },
         {
-          label: 'IMGPrompt',
-          href: 'https://prompt.newzone.top/',
+          label: 'api入口',
+          href: 'https://platform.openai.com/',
         },
         {
-          label: '文字处理',
-          href: 'https://tools.newzone.top/',
+          label: '官方Chat',
+          href: 'https://chat.openai.com/',
         },
         {
-          label: '工具收藏',
-          href: 'https://nav.newzone.top',
-        },
-        {
-          label: 'Find on Product Hunt',
-          href: 'https://www.producthunt.com/posts/chatgpt-shortcut?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-chatgpt&#0045;shortcut',
+          label: "ChatGPT-Next-Web",
+          href: "https://github.com/Yidadaa/ChatGPT-Next-Web",
         },
       ],
     },
     {
-      to: "https://xq7pd3qu17.feishu.cn/share/base/form/shrcnK7oaSPaAcj1YAHfy4jo0Jh",
-      label: "反馈/添加提示词",
+      to: "https://chat.aiprm.top",
+      label: "在线体验",
       position: "left",
     },
     { type: "localeDropdown", position: "right" },
     {
-      href: "https://github.com/rockbenben/ChatGPT-Shortcut",
+      href: "点击链接加入群聊【ai prompt】：http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=8iL4Va8YaqNyrbdifhEOD0biZx8l2tWY&authKey=TNyKaORGJ0wwCuiwy6BDBlI1MnHM4JTZVJpf9uP%2BT0%2FH5QgW5yrtoK5zKXVhe8xX&noverify=0&group_code=125800040",
       position: "right",
       className: "header-github-link",
     },
     {
-      href: "https://discord.gg/PZTQfJ4GjX",
+      href: "点击链接加入群聊【ai prompt】：http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=8iL4Va8YaqNyrbdifhEOD0biZx8l2tWY&authKey=TNyKaORGJ0wwCuiwy6BDBlI1MnHM4JTZVJpf9uP%2BT0%2FH5QgW5yrtoK5zKXVhe8xX&noverify=0&group_code=125800040",
       position: "right",
       className: "header-discord-link",
     },
