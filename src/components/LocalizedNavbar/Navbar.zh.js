@@ -23,11 +23,11 @@ const zhNavbar = {
         },
         {
           label: 'api入口',
-          href: 'https://platform.openai.com/',
+          href: 'https://platform.openai.com',
         },
         {
           label: '官方Chat',
-          href: 'https://chat.openai.com/',
+          href: 'https://chat.openai.com',
         },
         {
           label: "ChatGPT-Next-Web",
@@ -42,12 +42,12 @@ const zhNavbar = {
     },
     { type: "localeDropdown", position: "right" },
     {
-      href: "点击链接加入群聊【ai prompt】：http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=8iL4Va8YaqNyrbdifhEOD0biZx8l2tWY&authKey=TNyKaORGJ0wwCuiwy6BDBlI1MnHM4JTZVJpf9uP%2BT0%2FH5QgW5yrtoK5zKXVhe8xX&noverify=0&group_code=125800040",
+      href: "http://2t8.cn/Hvh6D",
       position: "right",
       className: "header-github-link",
     },
     {
-      href: "点击链接加入群聊【ai prompt】：http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=8iL4Va8YaqNyrbdifhEOD0biZx8l2tWY&authKey=TNyKaORGJ0wwCuiwy6BDBlI1MnHM4JTZVJpf9uP%2BT0%2FH5QgW5yrtoK5zKXVhe8xX&noverify=0&group_code=125800040",
+      href: "http://2t8.cn/Hvh6D",
       position: "right",
       className: "header-discord-link",
     },
