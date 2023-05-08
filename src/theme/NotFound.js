@@ -35,7 +35,7 @@ export default function NotFound() {
                   <a href="/">Back to home</a>
                 </button>
                 <button className="homepage">
-                  <a href="https://github.com/rockbenben/ChatGPT-Shortcut/issues/new?assignees=rockbenben&labels=bug&template=bug-report.yml&title=%5BBug%5D">
+                  <a href="https://aiprm.top/t/prm">
                     Report this bug
                   </a>
                 </button>
