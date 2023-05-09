@@ -94,7 +94,7 @@ function ShowcaseCard({ user, isDescription, copyCount, onCopy }) {
     setTimeout(() => setShowCopied(false), 2000);
     // Notify parent component to update the copy count
     onCopy(user.id, updatedCount);
-    window.location.href = 'https://chat.aiprm.top';
+    window.open('https://chat.aiprm.top', '_blank');
     } catch (error) {
     console.error("Error updating copy count:", error);
     }

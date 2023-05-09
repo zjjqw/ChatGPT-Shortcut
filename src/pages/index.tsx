@@ -370,7 +370,7 @@ function ShowcaseCards({ isDescription }) {
               >
                 <Heading as="h2">
                   <Translate id="showcase.favoritesList.title">
-                    Our favorites
+                    Our favorites 点击复制后到网站粘贴即可
                   </Translate>
                 </Heading>
                 <FavoriteIcon svgClass={styles.svgIconFavorite} />
