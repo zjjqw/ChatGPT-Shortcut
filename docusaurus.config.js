@@ -13,14 +13,14 @@ const config = {
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: "https://www.aishort.top",
+  url: "https://prm.aiprm.top",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "rockbenben", // Usually your GitHub org/user name.
+  organizationName: "zjjqw", // Usually your GitHub org/user name.
   projectName: "ChatGPT-Shortcut", // Usually your repo name.
 
   onBrokenLinks: "throw",
@@ -48,7 +48,7 @@ const config = {
           customCss: require.resolve("./src/css/custom.css"),
         },
         gtag: {
-          trackingID: "G-YJY639H2J1",
+          trackingID: "G-QKJ3RX4E8X",
           anonymizeIP: false,
         },
       }),
