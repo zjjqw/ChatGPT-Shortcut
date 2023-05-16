@@ -45,7 +45,7 @@ const DESCRIPTION = translate({
   message: "让生产力加倍的 ChatGPT 提示指令",
 });
 const SUBMIT_URL =
-  "https://aiprm.top/t/prm";
+  "https://ai.cn2.ltd/tishici.html";
 
 type UserState = {
   scrollTopPosition: number;
