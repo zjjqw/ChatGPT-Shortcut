@@ -35,7 +35,7 @@ export default function NotFound() {
                   <a href="/">Back to home</a>
                 </button>
                 <button className="homepage">
-                  <a href="https://aiprm.top/">
+                  <a href="https://prm.aiprm.top/">
                     Report this bug
                   </a>
                 </button>

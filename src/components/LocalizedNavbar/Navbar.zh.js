@@ -28,12 +28,7 @@ const zhNavbar = {
         {
           label: 'ChatGPT-Admin-Web',
           href: 'https://github.com/AprilNEA/ChatGPT-Admin-Web',
-        },
-        {
-          label: 'chatgpt-web-plus',
-          href: 'https://github.com/chatgpt-web-plus/free',
-        },
-        
+        },       
       ],
     },
     {
@@ -49,14 +44,6 @@ const zhNavbar = {
         {
           label: '汤姆的店铺',
           href: 'https://tomfk.top/',
-        },
-        {
-          label: "店小王",
-          href: "https://store.thew.one/",
-        },
-        {
-          label: '卡商发布申请',
-          href: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=m55iSKX6PolEhjit-YcQcZ_KM3k3baFH&authKey=wJDWRCuA4A0kbUEurPWceYqan%2FmDtIwCi8ciDPlmHq2qQCIKFjg71Rk02iMISZgb&noverify=0&group_code=125800042',
         },
         {
           label: '自行判断',
